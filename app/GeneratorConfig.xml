@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd"> 
+<generatorConfiguration> 
+	<properties resource="./custom.properties"/>
+	<classPathEntry location="${classPathEntry}"/>
+	<context id="mysql" targetRuntime="MyBatis3" defaultModelType="flat"> 
+		<!-- 分隔符 -->
+		<property name="beginningDelimiter" value="`"/>
+		<property name="endingDelimiter" value="`"/>
+		<property name="javaFileEncoding" value="UTF-8"/>
+		<!-- 注释 -->
+		<commentGenerator type="my.comment.generator.MyCommentGenerator">
+			<property name="suppressDate" value="true" />
+			<property name ="addRemarkComments" value="true"/>
+		</commentGenerator>
+		<!-- 数据源 -->
+		<jdbcConnection driverClass="${jdbcDriver}" connectionURL="${connectURL}" userId="${userId}"  password="${password}"/>
+		<!-- 实体类 -->
+		<javaModelGenerator targetPackage="${javaModelPN}" targetProject="${javaModeDir}"> 
+		    <property name="trimStrings" value="true" /> 
+		</javaModelGenerator> 
+		<!-- xml文件 -->
+		<sqlMapGenerator targetPackage="${XmlFilePN}"  targetProject="${XmlFileDir}"/>
+		<!-- 接口 -->
+		<javaClientGenerator type="XMLMAPPER" targetPackage="${InterfacePN}"  targetProject="${InterfaceDir}"/> 
+		<!-- 数据库表，可配置多个 -->
+		<table tableName="${tableName0}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table tableName="${tableName1}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table tableName="${tableName2}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table tableName="${tableName3}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table tableName="${tableName4}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table tableName="${tableName5}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table tableName="${tableName6}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table tableName="${tableName7}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table tableName="${tableName8}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table tableName="${tableName9}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table tableName="${tableName10}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table tableName="${tableName11}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table tableName="${tableName12}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table tableName="${tableName13}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table tableName="${tableName14}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table tableName="${tableName15}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>	
+	</context>
+	<context id="oracle" targetRuntime="MyBatis3" defaultModelType="flat"> 
+		<!-- 分隔符 -->
+		<property name="beginningDelimiter" value="&quot;"/>
+		<property name="endingDelimiter" value="&quot;"/>
+		<property name="javaFileEncoding" value="UTF-8"/>
+		<!-- 注释 -->
+		<commentGenerator type="my.comment.generator.MyCommentGenerator">
+			<property name="suppressDate" value="true" />
+			<property name ="addRemarkComments" value="true"/>
+		</commentGenerator>
+		<!-- 数据源 -->
+		<jdbcConnection driverClass="${jdbcDriver}" connectionURL="${connectURL}" userId="${userId}"  password="${password}">
+			<property name="remarksReporting" value="true"/>
+		</jdbcConnection>
+		<!-- 实体类 -->
+		<javaModelGenerator targetPackage="${javaModelPN}" targetProject="${javaModeDir}"> 
+		    <property name="trimStrings" value="true" /> 
+		</javaModelGenerator> 
+		<!-- xml文件 -->
+		<sqlMapGenerator targetPackage="${XmlFilePN}"  targetProject="${XmlFileDir}"/>
+		<!-- 接口 -->
+		<javaClientGenerator type="XMLMAPPER" targetPackage="${InterfacePN}"  targetProject="${InterfaceDir}"/> 
+		<!-- 数据库表，可配置多个 -->
+		<table schema="${schema}" tableName="${tableName0}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table schema="${schema}" tableName="${tableName1}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table schema="${schema}" tableName="${tableName2}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table schema="${schema}" tableName="${tableName3}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table schema="${schema}" tableName="${tableName4}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table schema="${schema}" tableName="${tableName5}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table schema="${schema}" tableName="${tableName6}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table schema="${schema}" tableName="${tableName7}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table schema="${schema}" tableName="${tableName8}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table schema="${schema}" tableName="${tableName9}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table schema="${schema}" tableName="${tableName10}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table schema="${schema}" tableName="${tableName11}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table schema="${schema}" tableName="${tableName12}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table schema="${schema}" tableName="${tableName13}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table schema="${schema}" tableName="${tableName14}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>
+		<table schema="${schema}" tableName="${tableName15}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false"/>	
+	</context>
+</generatorConfiguration> 
