@@ -1,4 +1,6 @@
-mybatisÄæÏò¹¤³ÌÃüÁîÐÐ·½Ê½Éú³É´úÂë
-Ò»¡¢ÅäÖÃcustom.properties
-¶þ¡¢ÔËÐÐ MysqlRun »òÕß OracleRun
-¶þ¡¢µ¼³öµ½ÏîÄ¿ÖÐÈç¹ûÂÒÂë£¬Òª°ÑeclipseµÄ±àÂëÉèÎªUTF-8
+### mybatisé€†å‘å·¥ç¨‹å‘½ä»¤è¡Œæ–¹å¼
+---
+#### ä½¿ç”¨æ–¹æ³•
+1. é…ç½®custom.properties
+2. è¿è¡Œ MysqlRun æˆ–è€… OracleRun
+3. å¯¼å‡ºåˆ°é¡¹ç›®ä¸­å¦‚æžœä¹±ç ï¼Œè¦æŠŠeclipseçš„ç¼–ç è®¾ä¸ºUTF-8
